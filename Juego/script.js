@@ -101,7 +101,7 @@ $section.addEventListener('click', ()=>{
     text.innerText = " Welcome to Dragon Slayer. You must defeat the dragon that is preventing people from leaving the town. You are in the town square. Where do you want to go? Use the buttons above."
     $section.remove()
     const audio = new Audio('./medieval_song.mp3');
-    audio.volume = 0.5
+    audio.volume = 0.8
     audio.play()
 })
 // initialize buttons
