@@ -96,7 +96,14 @@ const locations = [{
     text : "You find a secret game. Pick a number above. Ten numbers will be randomly chosen between 0 and 10. If the number you choose matches one of the random numbers, you win!"  
 }
 ];
-
+const $section = document.getElementById('song')
+$section.addEventListener('click', ()=>{
+    text.innerText = " Welcome to Dragon Slayer. You must defeat the dragon that is preventing people from leaving the town. You are in the town square. Where do you want to go? Use the buttons above."
+    $section.remove()
+    const audio = new Audio('./medieval_song.mp3');
+    audio.volume = 0.5
+    audio.play()
+})
 // initialize buttons
 
 button1.onclick = goStore;
